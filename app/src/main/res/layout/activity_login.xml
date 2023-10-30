@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/purple">
+        android:background="@color/white">
 
         <TextView
             android:id="@+id/lgn_txt1"
@@ -15,7 +15,8 @@
             android:text="Log in"
             android:layout_marginStart="32dp"
             android:layout_marginTop="128dp"
-            android:textColor="#ffffff"
+            android:textColor="@color/grey"
+
             android:textStyle="bold"
             android:textSize="50sp"
 
@@ -29,7 +30,7 @@
             android:text="Email"
             android:layout_marginTop="32dp"
             android:textSize="20sp"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/lgn_txt1"
             app:layout_constraintTop_toBottomOf="@+id/lgn_txt1" />
@@ -38,15 +39,19 @@
             android:id="@+id/lgn_email"
             android:layout_width="0dp"
             android:layout_height="50dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginTop="16sp"
+            android:autofillHints="emailAddress"
             android:background="@drawable/edittext_background"
-            android:textColor="#707070"
-            android:textSize="20sp"
-            android:padding="8dp"
             android:ems="10"
+            android:hint="@string/email"
             android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_gray"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/lgn_txt2"
             app:layout_constraintTop_toBottomOf="@+id/lgn_txt2" />
 
@@ -58,11 +63,12 @@
             android:layout_marginTop="32dp"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="@+id/lgn_email"
             app:layout_constraintTop_toBottomOf="@+id/lgn_email" />
 
         <EditText
+            android:hint="password"
             android:id="@+id/lgn_pass"
             android:layout_width="0dp"
             android:layout_height="50dp"
@@ -112,7 +118,7 @@
             android:text="Don't have an account?"
             android:textSize="16sp"
             android:layout_marginTop="32dp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="@+id/lgn_btn"
             app:layout_constraintStart_toStartOf="@+id/lgn_btn"
             app:layout_constraintTop_toBottomOf="@+id/lgn_btn" />
